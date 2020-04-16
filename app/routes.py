@@ -1,7 +1,6 @@
-from flask import render_templates
+from flask import render_template
 from app import app
-import datetime
 @app.route("/",methods=["GET"])
 def index():
     details ={'user':'kb'}
-    return render_template("index.html")
+    return render_template('index.html')
